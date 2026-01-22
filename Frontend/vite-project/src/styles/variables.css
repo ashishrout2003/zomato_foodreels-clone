@@ -1,0 +1,23 @@
+:root {
+  --bg: #f7f7fb;
+  --card: #ffffff;
+  --text: #0f1724;
+  --muted: #6b7280;
+  --accent: #ef4444;
+  --border: #e6e9ef;
+  --radius: 12px;
+  --glass: rgba(255,255,255,0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #071026;
+    --card: #091124;
+    --text: #e6eef8;
+    --muted: #93a3b8;
+    --accent: #fb7185;
+    --border: #0f1724;
+    --radius: 12px;
+    --glass: rgba(255,255,255,0.03);
+  }
+}

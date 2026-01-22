@@ -1,0 +1,115 @@
+/* Profile layout for Food Partner page */
+.fp-page {
+  min-height: 100vh;
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  background: var(--bg);
+}
+
+.fp-card {
+  width: 360px;
+  background: var(--card);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+  box-sizing: border-box;
+}
+
+.fp-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.fp-avatar {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--accent), var(--muted));
+  flex: 0 0 72px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08) inset;
+}
+
+.fp-header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1 1 auto;
+}
+
+.fp-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  background: var(--glass);
+  color: var(--text);
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+}
+
+.fp-pill.small {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.fp-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  gap: 12px;
+}
+
+.fp-stat {
+  text-align: left;
+}
+
+.fp-stat-label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.fp-stat-value {
+  font-weight: 700;
+  margin-top: 6px;
+  font-size: 1.1rem;
+}
+
+.fp-sep {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 14px 0;
+}
+
+.fp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.fp-tile {
+  width: 100%;
+}
+
+.fp-tile-inner {
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(180deg, var(--border), rgba(0,0,0,0.02));
+  /* border-radius: 6px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-weight: 600;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 420px) {
+  .fp-card {
+    width: 92vw;
+    padding: 14px;
+  }
+}

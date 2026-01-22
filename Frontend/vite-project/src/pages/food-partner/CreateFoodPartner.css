@@ -1,0 +1,112 @@
+/* Mobile-first styles for CreateFoodPartner form, using variables from ../../styles/variables.css */
+.cfp-page {
+  min-height: 100vh;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: var(--bg);
+}
+
+.cfp-card {
+  width: 100%;
+  max-width: 520px;
+  background: var(--card);
+  padding: 14px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  box-sizing: border-box;
+}
+
+.cfp-title {
+  margin: 0 0 10px 0;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.cfp-label {
+  display: block;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.cfp-input-file {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.cfp-filename {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.cfp-preview {
+  margin-top: 10px;
+}
+
+.cfp-preview video {
+  width: 100%;
+  border-radius: 8px;
+  background: var(--border);
+}
+
+.cfp-input, .cfp-textarea {
+  margin-top: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+.cfp-textarea { resize: vertical }
+
+.cfp-button {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Styled file drop area */
+.cfp-file-drop {
+  margin-top: 8px;
+  border: 2px dashed var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background: transparent;
+  transition: border-color .12s ease, background .12s ease;
+}
+
+.cfp-file-drop.dragover {
+  border-color: var(--accent);
+  background: rgba(0,0,0,0.02);
+}
+
+.cfp-file-icon { color: var(--muted); }
+
+.cfp-file-drop-text { color: var(--text); font-weight: 600 }
+.cfp-file-drop-sub { color: var(--muted); font-size: 0.85rem }
+
+.cfp-filename-row { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-top:8px }
+.cfp-clear { background:transparent; border:none; padding:6px; border-radius:6px; color:var(--muted); cursor:pointer }
+.cfp-clear svg { display:block }
+
+@media (min-width: 720px) {
+  .cfp-page { padding: 28px }
+  .cfp-card { padding: 20px }
+}
